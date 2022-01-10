@@ -1,0 +1,36 @@
+ReadMe File
+Student number G00296946  
+Student Name Valery Taustsiakou
+eclipse: 15.0.2
+JUnit4 
+Windows 10OS
+----------------------------------------------------------------------------
+Refactoring: package ie.gmit.dip
+The refactored insurance program works by starting with a single scanner
+in the class UserInput. The inputs are age integer and accident integer.
+The getter methods for the cost integers surcharge & basic insurance are in the 
+class Costs file. 
+The AgeSelectionMenu class has a boolean called keepRunning placed at the end 
+of the method to stop the menu. 
+The AgeSelectionMenu loops in the method from class ChargeMenu.
+The insurance program is started in the Runner class to go to the AgeSelectionMenu 
+first. 
+
+Future refactoring could be improved to have 2 menus in one class and using parameters 
+in age menu to return type age, type age will be an input into the ChargeMenu. 
+This would make testing simpler. 
+-------------------------------------------------------------------------------
+Testing process: 
+Annotation interfaces created based on the import needs in package ie.gmit.dip.AnnotationsInterfaces
+package ie.gmit.dip.test contains the testing java class files. 
+
+CostsTest.java tests the getter methods to receive the correct cost values.
+AgeSelectionMenuTest.java tests a timeout method to know the running time of the age menu 
+& an assertNotNull check for the age parameter.
+Tester.java tests two exceptions, beforeAll, afterAll, afterEach, Parameterised test for
+the classes ChargeMenu and UserInput. 
+ChargeMenuTest.java tests the class ChargeMenu methods.
+TestAllJUnitClass runs all testing classes.  
+---------------------------------------------------------------------------------
+Testing can be improved with efficient refactoring of original code.
+StackOverflow was searched on the method test if statements in original code.
